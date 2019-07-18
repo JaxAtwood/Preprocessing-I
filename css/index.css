@@ -136,6 +136,7 @@ body {
 }
 .container {
   background-color: gray;
+  font-family: 'Acme', sans-serif;
 }
 .grayBox {
   width: 95%;
@@ -166,12 +167,13 @@ body {
   width: 30%;
   margin-top: 30px;
   margin-bottom: 10px;
-  margin-left: 460px;
+  margin-left: 610px;
 }
 .topContent .navbar a {
   text-decoration: none;
   color: white;
   width: 100%;
+  margin: 10px;
 }
 .bio {
   margin-top: 10px;
@@ -204,15 +206,22 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.Meat {
+.AboutMe {
   color: slategray;
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 @media (max-width: 500px) {
-  .Meat {
+  .AboutMe {
     text-align: center;
   }
+}
+.AboutMe h4 {
+  color: black;
+  text-decoration: underline;
+  font-size: 25px;
+  margin: 15px 0;
 }
 footer {
   margin: 30px;
@@ -223,11 +232,13 @@ footer .Contact {
   margin-top: 30px;
   border: solid black 1px;
 }
-footer .Contact i {
+footer .Contact a {
   margin: 20px;
+  color: black;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
-  footer .Contact i {
+  footer .Contact a {
     margin: 5px;
   }
 }

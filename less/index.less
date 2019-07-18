@@ -67,8 +67,10 @@ html, body {
 	border-radius: 10%;
 }
 
+@backgroundColor: gray;
+
 .container {
-	background-color: gray;
+	background-color: @backgroundColor;
 	font-family: 'Acme', sans-serif;
 }
   .grayBox {
@@ -79,6 +81,7 @@ html, body {
 	margin: 0 auto;
 	.boxBorder();
 	.borderRad();
+	
   }
   .selfie {
 	max-width: 150px;
